@@ -20,7 +20,7 @@ const Header = () => {
                     <li>ENG</li>
                 </ul>
             </div>
-            <input className={css.search} type='text'/>
+            <input className={css.search} type='text'placeholder='search-here'/>
             <CgShoppingBag className={css.cart}/>
         </div>
     </div>
