@@ -30,7 +30,7 @@
     cursor: pointer;
     color: var(--pink);
 }
-.left-s{
+/* .left-s{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -63,5 +63,28 @@
     right: 0;
     bottom: -20%;
     width: 40%;
-    height: 100%;
+    height: 20%;
+} */
+.list{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+    height: 25rem;
+    overflow-y: scroll;
+    justify-content: space-between;
+    grid-gap:2rem;
+}
+.products>img{
+    top: 3rem;
+    width: 6rem;
+    height: 11rem;
+}
+.products{
+    width: 12rem;
+    height: 8rem;
+    position: relative;
+    background-color: white;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    display: flex;
+    padding: 1rem;
 }

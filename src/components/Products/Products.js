@@ -6,16 +6,20 @@ import { ProductsData } from '../../data/products'
 
 const Products = () => {
     const [menuproducts,setmenuproducts]=useState(ProductsData)
+
+    const filter=(type)=>{
+        setmenuproducts(ProductsData.filter((product)=>product.type===type))
+    }
   return (
     <div className={css.container}>
         <img src={plane} alt='plane img'/>
         <h1>Our Feture Products</h1>
         <div className={css.Products}>
             <ul className={css.menu}>
-                <li>All</li>
-                <li>Skin care</li>
-                <li>Conditioners</li>   
-                <li>Foundations</li>
+                <li onClick={()=>setmenuproducts(ProductsData)}>All</li>
+                <li onClick={()=>filter("skin care")}>Skin care</li>
+                <li onClick={()=>filter("conditioner")}>Conditioners</li>   
+                <li onClick={()=>filter("foundation")}>Foundations</li>
             </ul>
             <div className={css.list}>
                 {menuproducts.map((product,i)=>
