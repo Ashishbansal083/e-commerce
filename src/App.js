@@ -6,6 +6,7 @@ import Slider from "./components/Slider/Slider";
 import Virtuals from "./components/Virtuals/Virtuals";
 import Products from "./components/Products/Products";
 import Testimonials from "./components/Testimonials/Testimonials";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -16,6 +17,8 @@ function App() {
       <Virtuals/>
       <Products/>
       <Testimonials/>
+      <Footer/>
+
     </div>
   );
 }

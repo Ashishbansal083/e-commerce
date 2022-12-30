@@ -1,0 +1,32 @@
+.cfooterwrapper{
+    /* display: flex;
+    flex-direction: row; */
+    width: 100%;
+    margin-top: 5rem;
+}
+.cfooterwrapper>hr{
+    height: 1px;
+    border: none;
+    background: white;
+    width: 100%;
+    margin-top: 1rem;
+}
+.cfooter{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+}
+.logo{
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+}
+.logo>img{
+    width: 2.5rem;
+    height: 2.5rem;
+}
+.logo>span{
+    font-weight: 600;
+    font-size: 1rem;
+}
