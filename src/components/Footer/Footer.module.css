@@ -30,3 +30,35 @@
     font-weight: 600;
     font-size: 1rem;
 }
+.block{
+    display: flex;
+    flex-direction: column;
+    max-width: 12rem;
+    gap: 1rem;
+}
+.detail{
+    display: flex;
+    flex-direction: column;
+    width: inherit;
+    font-size: 0.7rem;
+    gap: 1rem;
+    font-style: italic;
+}
+.detail>span:nth-child(1){
+    font-weight: 500;
+    font-size: 1.2rem;
+    font-style: normal;
+}
+.pngline:hover{
+    cursor: pointer;
+}
+.pngline{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.icon{
+    width: 25px;
+    size: 50px;
+    font-size: xx-large;
+}
