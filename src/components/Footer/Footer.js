@@ -14,7 +14,7 @@ import logo from '../../assets/logo.png'
     
 
 // } from 'heroicons-react/24/outline' ;
-import {HiOutlineLocationMarker,HiUser,HiOutlineLogin,HiOutlinePhone,HiInbox} from 'react-icons/hi';
+import {HiOutlineLocationMarker,HiOutlineLink,HiUser,HiOutlineLogin,HiOutlinePhone,HiInbox} from 'react-icons/hi';
 
 
 const Footer = () => {
@@ -41,9 +41,7 @@ const Footer = () => {
                   <HiInbox className={css.icon}/> 
                   <span>support</span>
                 </span>
-
               </div>
-
             </div>
             <div className={css.block}>
               <div className={css.detail}>
@@ -51,10 +49,8 @@ const Footer = () => {
                 <span className={css.pngline}>
                   <HiOutlineLogin className={css.icon}/> 
                   <span>Sign in</span>
-                </span>
-                
+                </span>                
               </div>
-
             </div>
             <div className={css.block}>
               <div className={css.detail}>
@@ -62,12 +58,24 @@ const Footer = () => {
                 <span className={css.pngline}>
                   <HiUser className={css.icon}/> 
                   <span>About us</span>
-                </span>
-                
+                </span>                
               </div>
-
             </div>
+            <div className={css.block}>
+              <div className={css.detail}>
+                <span>Resources</span>
+                <span className={css.pngline}>
+                  <HiOutlineLink className={css.icon}/> 
+                  <p>Safety privacy & terms</p>
+                </span>                
+              </div>
+            </div>
+            
         </div>
+        <div className={css.copyRight}>
+              <span>copyright @2022 by ashish.inc</span>
+              <span>All right reserved</span>
+            </div>
 
     </div>
   )
