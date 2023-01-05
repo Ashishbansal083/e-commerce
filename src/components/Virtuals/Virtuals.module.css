@@ -41,3 +41,18 @@
 .wrapper{
     width: 30rem;
 }
+@media screen and (max-width:856px) {
+    .Virtuals{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        padding: 1rem;
+        text-align: center;
+        
+    }    
+    
+}

@@ -125,9 +125,30 @@
     }
     .bluecircle{
         position: absolute;
+        width: 70%;
+        height: 100%;
     }
     .wrapper>img{
         width: 70%;
         height: 100%;
+    }
+    .container{
+        grid-template-areas: 
+        'left center center'
+        'right right right';
+    }
+    .container>:nth-child(1){
+        grid-area: left;
+        grid-template-rows: none;
+        gap: 8rem;
+    }
+    .container>:nth-child(2){
+        grid-area: center;
+    }
+    .container>:nth-child(3){
+        grid-area: right;
+        display: flex;
+        justify-content: space-around;
+        margin: 2rem 0rem;
     }
 }
